@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="village_Chandpally <= 0.5\nsamples = 100.0%\nvalue = [0.927, 0.073]\nclass = P.S.", fillcolor="#e78b49"] ;
+1 [label="HCO3 <= 435.0\nsamples = 99.7%\nvalue = [0.932, 0.068]\nclass = P.S.", fillcolor="#e78a47"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="village_Ramanjapuram <= 0.5\nsamples = 92.1%\nvalue = [0.965, 0.035]\nclass = P.S.", fillcolor="#e68640"] ;
+1 -> 2 ;
+3 [label="mandal_Bheemadevarapallly <= 0.5\nsamples = 91.8%\nvalue = [0.967, 0.033]\nclass = P.S.", fillcolor="#e68540"] ;
+2 -> 3 ;
+4 [label="village_Reddypally <= 0.5\nsamples = 91.2%\nvalue = [0.967, 0.033]\nclass = P.S.", fillcolor="#e68540"] ;
+3 -> 4 ;
+5 [label="(...)", fillcolor="#C0C0C0"] ;
+4 -> 5 ;
+70 [label="(...)", fillcolor="#C0C0C0"] ;
+4 -> 70 ;
+71 [label="samples = 0.6%\nvalue = [1.0, 0.0]\nclass = P.S.", fillcolor="#e58139"] ;
+3 -> 71 ;
+72 [label="samples = 0.3%\nvalue = [0.0, 1.0]\nclass = U.S.", fillcolor="#399de5"] ;
+2 -> 72 ;
+73 [label="village_Nandanam <= 0.5\nsamples = 7.6%\nvalue = [0.5, 0.5]\nclass = P.S.", fillcolor="#ffffff"] ;
+1 -> 73 ;
+74 [label="village_Damera <= 0.5\nsamples = 7.3%\nvalue = [0.515, 0.485]\nclass = P.S.", fillcolor="#fdf8f3"] ;
+73 -> 74 ;
+75 [label="mandal_Thurkapally <= 0.5\nsamples = 6.9%\nvalue = [0.5, 0.5]\nclass = P.S.", fillcolor="#ffffff"] ;
+74 -> 75 ;
+76 [label="(...)", fillcolor="#C0C0C0"] ;
+75 -> 76 ;
+105 [label="(...)", fillcolor="#C0C0C0"] ;
+75 -> 105 ;
+106 [label="samples = 0.3%\nvalue = [1.0, 0.0]\nclass = P.S.", fillcolor="#e58139"] ;
+74 -> 106 ;
+107 [label="samples = 0.3%\nvalue = [0.0, 1.0]\nclass = U.S.", fillcolor="#399de5"] ;
+73 -> 107 ;
+108 [label="samples = 0.3%\nvalue = [0.0, 1.0]\nclass = U.S.", fillcolor="#399de5"] ;
+0 -> 108 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

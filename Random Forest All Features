@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="mandal_Shankarampet R <= 0.5\nsamples = 100.0%\nvalue = [0.933, 0.067]\nclass = P.S.", fillcolor="#e78a47"] ;
+1 [label="village_Narsingbhatla <= 0.5\nsamples = 99.7%\nvalue = [0.935, 0.065]\nclass = P.S.", fillcolor="#e78a47"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="pH <= 9.035\nsamples = 99.4%\nvalue = [0.94, 0.06]\nclass = P.S.", fillcolor="#e78946"] ;
+1 -> 2 ;
+3 [label="mandal_Rajapur <= 0.5\nsamples = 99.1%\nvalue = [0.944, 0.056]\nclass = P.S.", fillcolor="#e78845"] ;
+2 -> 3 ;
+4 [label="village_Manthani  <= 0.5\nsamples = 98.7%\nvalue = [0.944, 0.056]\nclass = P.S.", fillcolor="#e78945"] ;
+3 -> 4 ;
+5 [label="(...)", fillcolor="#C0C0C0"] ;
+4 -> 5 ;
+90 [label="(...)", fillcolor="#C0C0C0"] ;
+4 -> 90 ;
+91 [label="samples = 0.3%\nvalue = [1.0, 0.0]\nclass = P.S.", fillcolor="#e58139"] ;
+3 -> 91 ;
+92 [label="samples = 0.3%\nvalue = [0.0, 1.0]\nclass = U.S.", fillcolor="#399de5"] ;
+2 -> 92 ;
+93 [label="samples = 0.3%\nvalue = [0.0, 1.0]\nclass = U.S.", fillcolor="#399de5"] ;
+1 -> 93 ;
+94 [label="samples = 0.3%\nvalue = [0.0, 1.0]\nclass = U.S.", fillcolor="#399de5"] ;
+0 -> 94 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
